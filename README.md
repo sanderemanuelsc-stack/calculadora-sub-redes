@@ -20,7 +20,7 @@ Ferramenta web que calcula informações de uma rede IPv4 a partir de um endere�
 
 ## Como usar
 Abra o `index.html` no navegador ou acesse a versão online:
-`https://SEU-USUARIO.github.io/calculadora-sub-redes/`
+`https://sanderemanuelsc-stack.github.io/calculadora-sub-redes/`
 
 ## Como rodar os testes
 Com o [Node.js](https://nodejs.org/) instalado:
