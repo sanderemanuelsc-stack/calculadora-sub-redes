@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Sub-redes IPv4</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>🌐 Calculadora de Sub-redes IPv4</h1>
+    <p class="sub">Informe um endereço IP e o prefixo CIDR para ver os detalhes da rede.</p>
+
+    <form id="form">
+      <label>Endereço IP
+        <input id="ip" type="text" value="192.168.1.10" placeholder="192.168.1.10" required>
+      </label>
+      <label>CIDR (/)
+        <input id="cidr" type="number" min="0" max="32" value="24" required>
+      </label>
+      <label>Dividir em (/) <small>opcional</small>
+        <input id="novo-cidr" type="number" min="1" max="32" placeholder="ex.: 26">
+      </label>
+      <button type="submit">Calcular</button>
+    </form>
+
+    <p id="erro" role="alert"></p>
+    <section id="resultado" hidden></section>
+    <section id="subredes" hidden></section>
+  </main>
+
+  <script src="calculadora.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
